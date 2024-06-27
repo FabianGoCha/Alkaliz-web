@@ -1,0 +1,75 @@
+header {
+    position: relative;
+    background: #e9f6ff;
+    background-image: url(../assets/Castle/castle14.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(116,0,182, 0.3);
+    
+  }
+  
+  .Logo  {
+    background-image: url("../assets/logo/firma-logo.png");
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 135PX;
+    text-indent: -99999px;
+    top: -40px;
+  }
+  
+  .header h1{
+    position: relative;
+    color: #f6f4ea;
+  }
+  .header hr{
+    position: relative;
+    color: #f6f4ea;
+  }
+  
+  .header ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: None;
+  }
+  
+  .header li {
+    display: inline-block;
+    border-radius: 4px;
+    margin: 0px 0px 0px 50px ;
+    /*margin: auto;*/
+    color: #f6f4ea;
+  }
+  
+  .header a {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f6f4ea;
+    text-decoration: none;
+  }
+  .header a:hover {
+    color: #e9e0d0;
+  }
+  
+  .header h1 {
+    margin-bottom: 50px;
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+

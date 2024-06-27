@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #242424;
+}
+
+
+footer{
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  background: rgba(128,0,0, 0.8);
+  padding: 10px;
+}
+
+.Carrusel{
+  display: 'block';
+  max-width: 1000px; 
+  max-height: 250px;
+  padding: 30;
+  background-color: #242424;
+  position: relative;
+  margin: auto;
+}
+
+.Carrusel h4{
+  max-width: 500px;
+  max-height: 200px;
+  color: #e9e0d0;
+  margin: 0px 200px 20px 200px;
+  padding: 10px 10px 10px 5px;
+  display:inline-block;
+}
+
+.Carrusel img{
+  max-width: 700px;
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto;
+}
