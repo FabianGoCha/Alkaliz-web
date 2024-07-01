@@ -1,24 +1,28 @@
-header {
+.header {
     position: relative;
     background: #e9f6ff;
     background-image: url(../assets/Castle/castle14.jpeg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
     padding: 60px;
     text-align: center;
+    z-index: 1000;
   }
   
-  header::before{
+  .header::before{
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(116,0,182, 0.3);
+    background-color: rgba(115, 0, 182, 0.192);
     
+  }
+
+  .header hr {
+    z-index: 500;
   }
   
   .Logo  {
@@ -41,30 +45,62 @@ header {
     position: relative;
     color: #f6f4ea;
   }
-  
-  .header ul {
+
+  .navbar {
     position: relative;
-    margin: 0;
-    padding: 0;
-    list-style-type: None;
+  }
+
+  .container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
   }
   
-  .header li {
-    display: inline-block;
-    border-radius: 4px;
-    margin: 0px 0px 0px 50px ;
-    /*margin: auto;*/
-    color: #f6f4ea;
+  .menu-icon {
+    display: none;
+  }
+
+
+  .nav-elements ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
   }
   
-  .header a {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 60px;
+  }
+  
+  .nav-elements ul a {
     font-size: 1.5em;
     font-weight: 500;
     color: #f6f4ea;
     text-decoration: none;
   }
-  .header a:hover {
+
+  .nav-elements ul a:hover {
     color: #e9e0d0;
+  }
+  
+  .nav-elements ul a.active {
+    color: #f6f4ea;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-elements ul a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e9e0d0;
   }
   
   .header h1 {
@@ -73,3 +109,42 @@ header {
     line-height: 1.1;
   }
 
+  @media (max-width: 768px) {
+    .nav-elements ul li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .menu-icon {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      width: 50px;
+    }
+    
+    .nav-elements {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: black;
+      width: 0px;
+      height: calc(100vh - 60px);
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+    }
+  
+    .nav-elements.active {
+      width: 270px;
+    }
+  
+    .nav-elements ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-elements ul li {
+      margin-right: unset;
+      margin-top: 22px;
+    }
+  }

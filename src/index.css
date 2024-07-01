@@ -24,7 +24,7 @@ body {
 
 
 footer{
-  position:absolute;
+  position: relative;
   left:0;
   bottom:0;
   right:0;
@@ -33,11 +33,11 @@ footer{
 }
 
 .Carrusel{
-  display: 'block';
+  display: 'inline-block';
   max-width: 1000px; 
   max-height: 250px;
   padding: 30;
-  background-color: #242424;
+  
   position: relative;
   margin: auto;
 }
@@ -46,7 +46,7 @@ footer{
   max-width: 500px;
   max-height: 200px;
   color: #e9e0d0;
-  margin: 0px 200px 20px 200px;
+  margin: 0px 500px 20px 200px;
   padding: 10px 10px 10px 5px;
   display:inline-block;
 }

@@ -8,9 +8,9 @@ function App()  {
   return(
     
     <Router>
-    <Header/>
-    <CarouselFadeExample/>
-    <Footer/>
+      <Header/>
+      <CarouselFadeExample/>
+      <Footer/>
     </Router>
   );
 }
