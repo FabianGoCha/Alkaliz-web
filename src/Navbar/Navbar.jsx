@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
-import './Header.css'
+import './Navbar.css'
 
-const Header = () => {
+const Navbar = () => {
 
     const [showNavbar, setShowNavbar] = useState(false)
 
@@ -12,12 +12,19 @@ const Header = () => {
     }
 
     return(
-        <header className='header'> 
-            <h1>Alkaliz</h1>
             <nav className='navbar'>
                 <div className='container'>
-                    <div className="Logo">
+                    <div className="logo">
                         <a to="/">Logo</a>
+                    </div>
+                    <div className="titulo">
+                        <h1>
+                            <a to="/">Alkaliz</a>
+                            <span>
+                                dragon
+                            </span>
+                        </h1>
+                        
                     </div>
                     <div className='menu-icon' onClick={handleShowNavbar}>
                         <GiHamburgerMenu size={50}/>
@@ -40,10 +47,8 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            
-        </header>
     );
 }
 
 
-export default Header
+export default Navbar

@@ -1,4 +1,4 @@
-import Header from "./Header/Header.jsx"
+import Navbar from "./Navbar/Navbar.jsx"
 import Footer from "./Footer/Footer.jsx";
 import CarouselFadeExample from "./Carousel/Carousel.jsx"
 
@@ -8,9 +8,8 @@ function App()  {
   return(
     
     <Router>
-      <Header/>
+      <Navbar/>
       <CarouselFadeExample/>
-      <Footer/>
     </Router>
   );
 }
