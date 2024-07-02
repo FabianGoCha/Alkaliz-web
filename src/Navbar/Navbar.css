@@ -9,6 +9,7 @@
   width: 150px;
   height: 100PX;
   text-indent: -99999px;
+  top: -15px;
 }
 
 .container {
@@ -22,7 +23,7 @@
 }
 
 .navbar {
-  height: 150px;
+  height: 100px;
   background-color: #fef7e5;
   position: relative;
   z-index: 1000;
@@ -38,6 +39,12 @@
   font-family:"Playfair Display", serif; 
   font-weight:400;
 }
+
+.titulo h1 a {
+  text-decoration: none;
+  color:#222;
+}
+
 .titulo h1 span {
   margin-top: 5px;
   font-size:15px; 
@@ -68,6 +75,7 @@
 
 .menu-icon {
   display: none;
+  
 }
 
 .nav-elements ul {
@@ -81,11 +89,20 @@
   margin-right: 60px;
 }
 
+.logo a {
+  cursor: pointer;
+}
+
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
   color: #2f234f;
   text-decoration: none;
+}
+
+.nav-elements ul li a:hover {
+  color: #1e133d;
+  background-color: #f7ecd0;
 }
 
 .nav-elements ul a.active {
@@ -104,7 +121,7 @@
   background-color: #574c4c;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
   }
@@ -114,6 +131,7 @@
   .menu-icon {
     display: block;
     cursor: pointer;
+  
   }
 
   .nav-elements {

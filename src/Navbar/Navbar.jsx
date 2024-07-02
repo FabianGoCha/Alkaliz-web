@@ -14,12 +14,14 @@ const Navbar = () => {
     return(
             <nav className='navbar'>
                 <div className='container'>
-                    <div className="logo">
-                        <a to="/">Logo</a>
-                    </div>
+                    <NavLink to="/">
+                        <div className="logo">
+                            Logo
+                        </div>
+                    </NavLink>
                     <div className="titulo">
                         <h1>
-                            <a to="/">Alkaliz</a>
+                            <NavLink to="/">Alkaliz</NavLink>
                             <span>
                                 dragon
                             </span>
@@ -27,7 +29,7 @@ const Navbar = () => {
                         
                     </div>
                     <div className='menu-icon' onClick={handleShowNavbar}>
-                        <GiHamburgerMenu size={50}/>
+                        <GiHamburgerMenu size={40}/>
                     </div>
                     <div className={`nav-elements  ${showNavbar && 'active'}`}>    
                         <ul>
