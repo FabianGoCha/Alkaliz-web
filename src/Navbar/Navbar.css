@@ -24,7 +24,7 @@
 
 .navbar {
   height: 100px;
-  background-color: #fef7e5;
+  background-color: #30838F;
   position: relative;
   z-index: 1000;
 }
@@ -101,12 +101,12 @@
 }
 
 .nav-elements ul li a:hover {
-  color: #1e133d;
-  background-color: #f7ecd0;
+  color: #6e45dc;
+  background-color: #539fabf1;
 }
 
 .nav-elements ul a.active {
-  color: #574c4c;
+  color: #a1bee9ee;
   font-weight: 500;
   position: relative;
 }
@@ -138,7 +138,7 @@
     position: absolute;
     right: 0;
     top: 100px;
-    background-color: #fef7e5;
+    background-color: #30838F;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;

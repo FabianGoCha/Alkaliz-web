@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Outlet , NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import './Navbar.css'
 
@@ -12,7 +12,8 @@ const Navbar = () => {
     }
 
     return(
-            <nav className='navbar'>
+          <> 
+           <nav className='navbar'>
                 <div className='container'>
                     <NavLink to="/">
                         <div className="logo">
@@ -49,7 +50,9 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-    );
+            <Outlet />
+            </>
+    );      
 }
 
 
