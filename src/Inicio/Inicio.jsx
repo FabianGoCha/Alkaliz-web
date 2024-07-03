@@ -4,7 +4,10 @@ import "./Inicio.css"
 const Inicio = () => {
     return( 
         <>
-        <h1 >Home</h1>
+        <div className="hero">
+            <h1 >Home</h1>
+
+        </div>
         <CarouselFadeExample />
         </>
     );
