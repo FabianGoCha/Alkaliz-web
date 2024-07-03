@@ -1,4 +1,4 @@
-import CarouselFadeExample from "../Carousel/Carousel.jsx";
+import CarouselFadeExample from "./Carousel/Carousel.jsx";
 import "./Inicio.css"
 
 const Inicio = () => {
