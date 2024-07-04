@@ -30,7 +30,7 @@ const Navbar = () => {
                         
                     </div>
                     <div className='menu-icon' onClick={handleShowNavbar}>
-                        <GiHamburgerMenu size={40}/>
+                        <GiHamburgerMenu size={40} color='white'/>
                     </div>
                     <div className={`nav-elements  ${showNavbar && 'active'}`}>    
                         <ul>
@@ -50,6 +50,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+            <div className= "topBlur" />
+            <div className="bottomBlur" />
             <Outlet />
             </>
     );      

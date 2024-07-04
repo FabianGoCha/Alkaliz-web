@@ -1,8 +1,8 @@
 import React from 'react'; 
 import 'bootstrap/dist/css/bootstrap.css'; 
 import Carousel from 'react-bootstrap/Carousel';
-import woman from '../../assets/Murales/bwoman.jpeg';
-import majora from '../../assets/figuras/majora.jpeg';
+import woman from '../../../assets/Murales/bwoman.jpeg';
+import majora from '../../../assets/figuras/majora.jpeg';
 import './Carousel.css'
 
 function CarouselFadeExample() {

@@ -1,9 +1,9 @@
-import Navbar from "./Navbar/Navbar.jsx"
-import Footer from "./Footer/Footer.jsx"
-import Inicio from "./Inicio/Inicio.jsx"
-import Acerca from "./Acerca/Acerca.jsx"
-import Contacto from "./Contacto/Contacto.jsx"
-import Trabajos from "./Trabajos/Trabajos.jsx"
+import Navbar from "./Componentes/Navbar/Navbar.jsx"
+import Footer from "./Componentes/Footer/Footer.jsx"
+import Inicio from "./Componentes/Inicio/Inicio.jsx"
+import Acerca from "./Componentes/Acerca/Acerca.jsx"
+import Contacto from "./Componentes/Contacto/Contacto.jsx"
+import Trabajos from "./Componentes/Trabajos/Trabajos.jsx"
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

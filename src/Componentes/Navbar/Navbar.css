@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "../../utils/vars.css";
 
 .logo  {
-  background-image: url("../assets/logo/firma-logo.png");
+  background-image: url("../../assets/logo/firma-logo.png");
   background-size: 90% 90%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -24,9 +25,11 @@
 
 .navbar {
   height: 100px;
-  background-color: #30838F;
+  /*background-color: var(--color-primary);*/
+  /*background-color: #30838F; */
   position: relative;
   z-index: 1000;
+
 }
 
 
@@ -34,7 +37,8 @@
   text-align:center; 
   font-size:50px; 
   text-transform:uppercase; 
-  color:#222; 
+  color: var(--color-text);
+  /* color:#222; */ 
   letter-spacing:1px;
   font-family:"Playfair Display", serif; 
   font-weight:400;
@@ -42,7 +46,8 @@
 
 .titulo h1 a {
   text-decoration: none;
-  color:#222;
+  color: var(--color-text);
+  /*color:#222;*/
 }
 
 .titulo h1 span {
@@ -96,7 +101,7 @@
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
-  color: #2f234f;
+  color:  var(--color-text);
   text-decoration: none;
 }
 
@@ -121,6 +126,34 @@
   background-color: #574c4c;
 }
 
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 100px;
+  min-width: 350px;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 100px;
+  min-width: 350px;
+  min-width: 250px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
 @media (max-width: 1150px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
@@ -138,7 +171,7 @@
     position: absolute;
     right: 0;
     top: 100px;
-    background-color: #30838F;
+    background-color: transparent;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
@@ -146,7 +179,7 @@
   }
 
   .nav-elements.active {
-    width: 270px;
+    width: 200px;
   }
 
   .nav-elements ul {
