@@ -50,8 +50,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className= "topBlur" />
-            <div className="bottomBlur" />
             <Outlet />
             </>
     );      

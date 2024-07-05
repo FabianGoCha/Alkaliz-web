@@ -6,6 +6,7 @@
     
     position: relative;
     margin: auto;
+    z-index: 1000;
   }
   
   .Carrusel h4{

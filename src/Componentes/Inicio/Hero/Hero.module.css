@@ -81,8 +81,8 @@
   top: -128px;
   left: -10vw;
   border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
+  background: rgba(48, 131, 143, 0.7);
+  filter: blur(150px);
   z-index: 0;
 }
 
@@ -95,8 +95,8 @@
   top: 246px;
   right: -25vw;
   border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
+  background: rgba(48, 131, 143, 0.837);
+  filter: blur(150px);
   z-index: 0;
 }
 
