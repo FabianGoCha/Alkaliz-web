@@ -1,12 +1,11 @@
 .Carrusel{
     display: 'inline-block';
-    max-width: 1000px; 
-    max-height: 250px;
+    max-width: 1500px; 
+    max-height: 1500px;
     padding: 30;
-    
+    bottom: 30px;
     position: relative;
     margin: auto;
-    z-index: 1000;
   }
   
   .Carrusel h4{
@@ -19,8 +18,17 @@
   }
   
   .Carrusel img{
-    max-width: 700px;
-    max-height: 300px;
+    max-width: 1000px;
+    max-height: 600px;
     object-fit: cover;
     margin: auto;
+  }
+
+  @media (max-width: 1000px) {
+    .Carrusel img{
+      max-width: 500px;
+      max-height: 300px;
+      object-fit: cover;
+      margin: auto;
+    }
   }

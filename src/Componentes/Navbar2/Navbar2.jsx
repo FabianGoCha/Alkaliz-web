@@ -18,8 +18,7 @@ function Navbar() {
             <h1>
                 <NavLink to="/">Alkaliz</NavLink>
                 <span>dragon</span>
-            </h1>
-                        
+            </h1>                
         </div>
       <div className="burger" onClick={() => setIsOpen(!isOpen)}>
         <div className={`burger-line ${isOpen ? 'open' : ''}`}></div>
