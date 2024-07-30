@@ -19,6 +19,13 @@
   .footer .col-md-4 {
     margin-bottom: 20px;
   }
+
+  .footer .col-md-4 ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 5em;
+    
+  }
   
   .footer h3 {
     margin-top: 0;
