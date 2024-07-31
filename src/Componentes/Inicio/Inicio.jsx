@@ -6,9 +6,13 @@ import { Hero } from "./Hero/Hero";
 const Inicio = () => {
     return( 
         <>
-        <Hero/>
+        <div className="hero-container">
+        <SwiperHero/>
+        <Hero/>       
+        </div>
+        <div className="content-container">
         <CarouselFadeExample />
-        <SwiperHero />
+        </div>
         </>
     );
   }

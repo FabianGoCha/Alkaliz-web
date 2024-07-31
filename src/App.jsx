@@ -1,4 +1,4 @@
-import Navbar from "./Componentes/Navbar2/Navbar2.jsx"
+import Navbar from "./Componentes/Navbar/Navbar.jsx"
 import Footer from "./Componentes/Footer/Footer.jsx"
 import Inicio from "./Componentes/Inicio/Inicio.jsx"
 import Acerca from "./Componentes/Acerca/Acerca.jsx"

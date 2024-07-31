@@ -5,11 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
+  margin-top: -700px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
   bottom: 50px;
+  min-height: 750px;
 }
 
 .content {
@@ -78,12 +79,12 @@
   position: absolute;
   width: 50vw;
   height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
+  min-width: 550px;
+  min-width: 550px;
   top: -128px;
   left: -10vw;
   border-radius: 764px;
-  background: rgba(48, 131, 143, 0.7);
+  background: rgba(143, 96, 48, 0.837);
   filter: blur(150px);
   z-index: 0;
 }
@@ -94,10 +95,9 @@
   height: 50vw;
   min-width: 350px;
   min-width: 250px;
-  top: 246px;
   right: -25vw;
   border-radius: 764px;
-  background: rgba(48, 131, 143, 0.837);
+  background: rgba(143, 96, 48, 0.837);
   filter: blur(150px);
   z-index: 0;
 }
