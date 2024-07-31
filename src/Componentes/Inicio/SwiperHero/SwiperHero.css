@@ -1,0 +1,17 @@
+.hero-slider {
+  width: 100%;
+  height: 600px; /* Adjust the height as needed */
+  z-index: 50000;
+}
+
+.slide-1 {
+  background-image: url("../../../assets/Murales/bwoman.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-2 {
+  background-image: url("../../../assets/figuras/majora.jpeg");
+  background-size: cover;
+  background-position: center;
+}
