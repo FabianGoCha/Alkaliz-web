@@ -10,7 +10,7 @@
   margin-left: 10%;
   margin-right: 10%;
   bottom: 50px;
-  min-height: 750px;
+  min-height: 700px;
 }
 
 .content {
@@ -28,8 +28,8 @@
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
+    rgba(255, 255, 240, 1) 70%,
+    rgba(255, 255, 255, 1) 120%
   );
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -40,6 +40,26 @@
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
+  color: rgba(255, 255, 240,1) 250%;
+}
+
+.redes{
+  font-family: var(--font-roboto);
+}
+
+.redes ul{
+  
+  display: flex;
+  justify-content: space-between;
+  max-width: 10em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 240,1) 250%;
+}
+
+.redes li {
+  margin-bottom: 10px;
 }
 
 .contactBtn {
@@ -79,12 +99,10 @@
   position: absolute;
   width: 50vw;
   height: 50vw;
-  min-width: 550px;
-  min-width: 550px;
   top: -128px;
   left: -10vw;
   border-radius: 764px;
-  background: rgba(143, 96, 48, 0.837);
+  background: rgba(48, 131, 143, 0.7);
   filter: blur(150px);
   z-index: 0;
 }
@@ -93,11 +111,9 @@
   position: absolute;
   width: 70vw;
   height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  right: -25vw;
+  right: -5vw;
   border-radius: 764px;
-  background: rgba(143, 96, 48, 0.837);
+  background: rgba(48, 131, 143, 0.7);
   filter: blur(150px);
   z-index: 0;
 }

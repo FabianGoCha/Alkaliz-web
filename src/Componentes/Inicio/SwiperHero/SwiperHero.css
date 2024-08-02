@@ -4,16 +4,3 @@
   position: relative;
 }
 
-.slide1 {
-  background-image: url('../../../assets/Murales/bwoman.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: inherit;
-}
-
-.slide2 {
-  background-image: url('../../../assets/figuras/majora.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: inherit;
-}

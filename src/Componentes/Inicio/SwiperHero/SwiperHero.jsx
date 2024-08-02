@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/css';
@@ -7,6 +7,9 @@ import "swiper/css/autoplay";
 
 import './SwiperHero.css'
 
+const imagesUrl = import.meta.glob('../../../assets/HeroSlider/*.{png,jpg,jpeg,PNG,JPEG}', 
+                  { eager: true, query: '?url', import: 'default' })
+const images = Object.values(imagesUrl)
 
 const SwiperHero = () => {
   return (
@@ -24,16 +27,21 @@ const SwiperHero = () => {
   modules={[Autoplay, Pagination]}
   className='heroSlider'
     >
-      <SwiperSlide>
-        <div className="slide1" >  
-        </div>
+      {images.map((image, index) =>
+      <SwiperSlide key={index}>
+        <div
+          className='slide'
+          style={{
+            backgroundImage : `url(${image})`,
+            backgroundSize : 'cover',
+            backgroundPosition: 'center',
+            height: '100vh'
+        }}
+        />
       </SwiperSlide>
-      <SwiperSlide>
-        <div className="slide2">  
-        </div> 
-      </SwiperSlide>
-    </Swiper>
-  )
-}
+      )}
+      </Swiper>
+      )}
+
 
 export default SwiperHero;
