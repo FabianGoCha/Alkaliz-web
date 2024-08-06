@@ -1,7 +1,10 @@
 .Carrusel{
     display: 'inline-block';
     max-width: 1500px; 
-    max-height: 1500px;
+    max-height: 2000px;
+    min-width: 500px;
+    min-height: 400px;
+    top: 10px;
     padding: 30;
     bottom: 30px;
     position: relative;
