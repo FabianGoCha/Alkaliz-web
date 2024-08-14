@@ -1,0 +1,19 @@
+@import "../../../../utils/vars.css";
+
+.redes{
+    font-family: var(--font-roboto);
+  }
+  
+.redes ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 10em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 240,1) 250%;
+  }
+  
+.redes li {
+    margin-bottom: 10px;
+  }
